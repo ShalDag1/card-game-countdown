@@ -261,10 +261,10 @@
         // Set target date to tomorrow at 20:30 Israel time
         const now = new Date();
         const tomorrow = new Date(now);
-        tomorrow.setDate(tomorrow.getDate() + 1);
+        tomorrow.setDate(tomorrow.getDate());
         tomorrow.setHours(20, 30, 0, 0);
 
-        const targetDate = tomorrow;
+        const targetDate = today;
 
         function updateCountdown() {
             const now = new Date();
